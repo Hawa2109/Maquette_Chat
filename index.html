@@ -1,60 +1,233 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     <link rel="stylesheet" href="./CSS/style.css">
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <title>Maquette OhMyCat</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-         <nav class="navigation navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">OhMyCats !</a>
-      </div>
-    </nav>
+      <nav class="navigation navbar bg-body-tertiary">
+        <div class="container-fluid w-50">
+          <a class="navbar-brand text-white" href="#">OhMyCats !</a>
+        </div>
+      </nav>
     </header>
-    <div class="banniere">
-        <h1 class="d-flex justify-content-center text-white ">Adoptez un chat trop bon !</h1>
+    <div class="banner">
+      <h1 class="d-flex justify-content-center text-white">
+        Adoptez un chat trop bon !
+      </h1>
     </div>
-    <main>
-        <section class="container">
-            <div class="row w-75 border border-danger mx-auto">
-                <div class="col-md-4">
-                    <h3>Les chats à adopter</h3>
-                </div>
-                <div class="col-6">
 
-                </div>
+    <section class="Carousel-form">
+      <div class="row w-75 mx-auto m-5">
+        <!-- Pour le formulaire -->
+        <div class="section-form col-md-4">
+          <h3 class="titre-form py-3">Les chats à adopter</h3>
+          <form id="adoptionForm" class="border border-secondary-subtle p-3">
+            <div class="mb-3 p-3">
+              <label for="choixChat" class="form-label">Choix du chat :</label>
+              <select id="choixChat" class="form-select">
+                <option value="" selected>-- Sélectionnez --</option>
+                <option value="Sushi">Sushi</option>
+                <option value="Maki">Maki</option>
+                <option value="Sashimi">Sashimi</option>
+                <option value="Yakitori">Yakitori</option>
+                <option value="Onigri">Onigri</option>
+              </select>
             </div>
-        </section>
-    </main>
-    <footer class="footer-section">
-        <div class="container">
-            <h4 class="text-center">Nos chats à adopter...</h4>
-            <section class="row">
-                <div class="col-8">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            <div class="mb-3 bg-div p-3">
+              <label for="adoptionRaison" class="form-label"
+                >Raison d'adoption :</label
+              >
+              <textarea
+                id="adoptionRaison"
+                class="form-control"
+                rows="4"
+                placeholder="Saisissez ici les raisons..."
+              ></textarea>
+              <small class="message-erreur" id="MessageErreur"
+                >La raison doit contenir au moins 10 caractéres.</small
+              >
+            </div>
+            <button type="submit" class="btn btn-success w-100">Envoyer</button>
+          </form>
+          <div id="messageValidation" class="success-message">
+            Merci pour votre bonté ! Votre demande va être étudiée dans les plus
+            brefs délais.
+          </div>
+        </div>
+        <!-- Le carousel -->
+        <div class="col-md-8 p-3 my-5">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/chat_1.jpg"
+                  class="d-block w-100"
+                  alt="Sushi"
+                />
+                <div class="carousel-caption">
+                  <h5>Sushi</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/chat_2.jpg"
+                  class="d-block w-100"
+                  alt="Maki"
+                />
+                <div class="carousel-caption">
+                  <h5>Maki</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/chat_3.jpg"
+                  class="d-block w-100"
+                  alt="Sashimi"
+                />
+                <div class="carousel-caption">
+                  <h5>Sashimi</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/chat_4.jpg"
+                  class="d-block w-100"
+                  alt="Yakitori"
+                />
+                <div class="carousel-caption">
+                  <h5>Yakitori</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/chat_5.jpg"
+                  class="d-block w-100"
+                  alt="Onigri"
+                />
+                <div class="carousel-caption">
+                  <h5>Onigri</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Deuxieme-section bg-dark-subtle">
+      <div class="row d-flex justify-content-between w-100 p-3">
+        <h4 class="titre-section p-3">Nos chats à adopter...</h4>
+        <div class="Paragraphes w-75">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             dicta, itaque expedita praesentium autem amet quae, laudantium est
             modi illum eveniet ratione, ea quam fuga quaerat laboriosam? Ipsa
             distinctio tempore minus delectus quisquam sunt id fuga voluptate,
-            perferendis, nulla deleniti corporis repellendus accusantium
-            aperiam consectetur facilis temporibus culpa amet. 
-                </div>
-                <div class="col-4">
-                    <img src="./images/tete-chat.png" alt="Tête  de chat" class="footer-image">
-                </div>
-
-            </section>
+            perferendis, nulla deleniti corporis repellendus accusantium aperiam
+            consectetur facilis temporibus culpa amet. <br />
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repudiandae consequatur rerum reprehenderit blanditiis molestiae vel
+            laudantium facere, harum animi aliquam? Blanditiis iure aliquam, at
+            velit ratione nihil temporibus mollitia deleniti.
+          </p>
         </div>
+        <div class="section-img">
+          <img
+            src="./images/tete-chat.png"
+            alt="Tête  de chat"
+            class="row-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="d-flex justify-content-end m-2 fs-5">&copy; OhMyCats</p>
     </footer>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./SCRIPT/script.js"></script>
+  </body>
 </html>
