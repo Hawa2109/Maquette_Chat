@@ -1,0 +1,20 @@
+﻿OhMyCats !
+Adoptez un chat trop bon !
+
+
+Les chats à adopter
+    Choix du chat
+    Raison d'adoption
+    Saisissez ici les raisons pour lesquelles vous souhaitez adopter ce chat...
+
+
+Sushi - Maki - Sashimi  Yakitori - Onigri
+
+Nos chats à adopter...
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            dicta, itaque expedita praesentium autem amet quae, laudantium est
+            modi illum eveniet ratione, ea quam fuga quaerat laboriosam? Ipsa
+            distinctio tempore minus delectus quisquam sunt id fuga voluptate,
+            perferendis, nulla deleniti corporis repellendus accusantium
+            aperiam consectetur facilis temporibus culpa amet.  

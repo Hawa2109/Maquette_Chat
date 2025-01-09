@@ -1,0 +1,45 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merienda', cursive;
+} */
+.navigation {
+    background-color: rgb(7, 7, 93) !important;
+}
+.nav-logo {
+      font-family:'Merienda', cursive ;
+}
+.banner {
+      background-image: url(../images/background.jpg);
+      /* height: 40vh; */
+      padding: 85px 0;
+      text-align: center;
+}
+  
+.cat-icon {
+      font-size: 5rem;
+      color: #6c757d;
+}
+    /* Images de la carousel */
+.carousel-inner img {
+      max-height: 400px;
+      object-fit: cover;
+}
+.titre-section, .titre-form{
+    color: rgb(47, 66, 120);
+}
+.section-image {
+        mix-blend-mode: darken;
+        background-color: rgba(29, 51, 76, 0.789);    
+}
+
+/* Pour le footer */
+.footer{
+background-color: rgb(7, 7, 93);
+padding: 5px; 
+
+}
+.footer p{
+      color: white;
+      /* text-align: center;*/
+}

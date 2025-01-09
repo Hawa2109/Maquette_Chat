@@ -1,0 +1,16 @@
+.navigation {
+    background-color: rgb(7, 7, 93) !important;
+}
+.banniere{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 60vh;
+}
+.footer-section {
+    background-color: rgba(128, 128, 128, 0.358);
+}
+.footer-image {
+    mix-blend-mode: multiply;
+}
