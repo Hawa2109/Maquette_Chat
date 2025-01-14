@@ -32,11 +32,6 @@
   margin-top: 15px;
 }
 
-.is-invalid {
-  background-color: #f9616180;
-  /* padding: 0.75rem 1.5rem; */
-  border-radius: 0.3rem;
-}
 .carousel-item {
   width: 100%;
 }
@@ -67,6 +62,14 @@
   color: white;
   /* text-align: center;*/
 }
+/* class JS */
+.is-invalid {
+  background-color: #f9616180;
+  /* padding: 0.75rem 1.5rem; */
+  border-radius: 0.3rem;
+}
+
+
 /* ----- Responsive  ----- */
 
 /* Écrans très petits (max-width: 576px) */
