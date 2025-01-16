@@ -32,13 +32,8 @@
   margin-top: 15px;
 }
 
-.in-valid {
+.is-invalid {
   background-color: #f9616180;
-  /* padding: 0.75rem 1.5rem; */
-  border-radius: 0.3rem;
-}
-.valid {
-  background-color: #6c974680;
   /* padding: 0.75rem 1.5rem; */
   border-radius: 0.3rem;
 }
@@ -84,115 +79,16 @@
   color: white;
   /* text-align: center;*/
 }
+/* class JS */
+.is-invalid {
+  background-color: #f9616180;
+  /* padding: 0.75rem 1.5rem; */
+  border-radius: 0.3rem;
+}
+
 /* ----- Responsive  ----- */
 
 /* Écrans très petits (max-width: 576px) */
-@media (max-width: 576px) {
-  .navigation .navbar-brand {
-    font-size: 1.2rem;
-  }
-
-  .banner {
-    padding: 50px 0;
-    font-size: 1.5rem;
-  }
-
-  .section-form {
-    margin-bottom: 20px;
-  }
-
-  .titre-form {
-    font-size: 1.2rem;
-  }
-
-  .carousel-item img {
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-  }
-
-  .Paragraphes {
-    font-size: 0.9rem;
-  }
-
-  .section-img {
-    width: 200px;
-    margin: 0 auto;
-  }
-
-  .footer p {
-    font-size: 0.8rem;
-  }
-}
-
-/* Écrans petits (max-width: 768px) */
-@media (max-width: 768px) {
-  .navigation .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .banner {
-    padding: 60px 0;
-    font-size: 2rem;
-  }
-
-  .Carousel-form .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section-form {
-    width: 90%;
-  }
-
-  .carousel-item img {
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-  }
-
-  .Paragraphes {
-    font-size: 1rem;
-  }
-
-  .section-img {
-    width: 250px;
-    margin: 20px auto;
-  }
-}
-
-/* Écrans moyens (max-width: 992px) */
-@media (max-width: 992px) {
-  .banner {
-    padding: 70px 0;
-    font-size: 2.5rem;
-  }
-
-  .Carousel-form .row {
-    gap: 20px;
-  }
-
-  .section-form {
-    width: 80%;
-  }
-
-  .section-img {
-    width: 280px;
-  }
-
-  .footer p {
-    font-size: 1rem;
-  }
-}
-
-/* Écrans larges (max-width: 1200px) */
-@media (max-width: 1200px) {
-  .banner {
-    padding: 80px 0;
-    font-size: 3rem;
-  }
-
-  .section-img {
-    width: 300px;
-  }
-}
+/* @media (max-width: 576px) {
+  
+} */
