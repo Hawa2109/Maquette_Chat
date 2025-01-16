@@ -3,7 +3,6 @@ let form = document.getElementById("adoptionForm");
 let choixChat = document.getElementById("choixChat");
 let adoptionRaison = document.getElementById("adoptionRaison");
 let messageValidation = document.getElementById("messageValidation");
-let messageErreur = document.getElementById("MessageErreur");
 let divArrea = document.querySelector(".div-arrea");
 let divInput = document.querySelector(".div-input");
 // Écouter l'événement de soumission du formulaire
@@ -15,8 +14,8 @@ form.addEventListener("submit", (event) => {
     form.style.display = "none";
   } else {
     // Afficher un message d'erreur personnalisé dans le textarea
-    divArrea.classList.add("in-valid");
-    divInput.classList.add("in-valid");
+    divArrea.classList.add("invalid");
+    divInput.classList.add("invalid");
     adoptionRaison.placeholder = "Veuillez saisir au moins 10 caractères.";
   }
 });
@@ -24,7 +23,7 @@ form.addEventListener("submit", (event) => {
 // Validation sur le choix du chat
 choixChat.addEventListener("change", () => {
   if (choixChat.value === "") {
-    divInput.classList.add("in-valid");
+    divInput.classList.add("invalid");
   } else {
     divInput.classList.add("valid"); // Ajouter une classe CSS pour indiquer que le champ est valide
   }
@@ -35,6 +34,6 @@ adoptionRaison.addEventListener("input", () => {
   if (adoptionRaison.value.length >= 10) {
     divArrea.classList.add("valid"); // Ajouter une classe CSS pour indiquer que le champ est valide
   } else {
-    divArrea.classList.add("in-valid");
+    divArrea.classList.add("invalid");
   }
 });

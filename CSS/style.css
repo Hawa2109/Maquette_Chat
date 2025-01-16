@@ -19,9 +19,7 @@
   color: rgb(47, 66, 120);
   font-family: "Merienda", cursive;
 }
-#MessageErreur {
-  display: none;
-}
+
 .success-message {
   display: none;
   background-color: #d4edda;
@@ -32,10 +30,14 @@
   margin-top: 15px;
 }
 
-.is-invalid {
+.invalid {
   background-color: #f9616180;
   /* padding: 0.75rem 1.5rem; */
   border-radius: 0.3rem;
+}
+.valid {
+  /* background-color: #84d55580; */
+  background-color: #d4edda;
 }
 .carousel-item {
   width: 100%;
